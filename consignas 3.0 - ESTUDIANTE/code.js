@@ -1,4 +1,4 @@
-/* --------------------------- NO TOCAR DESDE ACÁ --------------------------- */
+
 let datosPersona = {
   nombre: "",
   edad: 0,
@@ -31,10 +31,10 @@ const cambiarTema = document.querySelector('#cambiar-tema');
 profileBtn.addEventListener("click", renderizarDatosUsuario);
 materiasBtn.addEventListener("click", recorrerListadoYRenderizarTarjetas);
 cambiarTema.addEventListener("click", alternarColorTema);
-/* --------------------------- NO TOCAR HASTA ACÁ --------------------------- */
+
 
 function obtenerDatosDelUsuario() {
-  /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
+
   do {
     datosPersona.nombre = prompt('Ingrese su nombre:')
   } while (datosPersona.nombre === null || datosPersona.nombre === '' || datosPersona.nombre.length < 3 || !isNaN(datosPersona.nombre));
@@ -49,9 +49,9 @@ function obtenerDatosDelUsuario() {
 }
 
 function renderizarDatosUsuario() {
-  /* ------------------- NO TOCAR NI ELIMINAR ESTA FUNCION. ------------------- */
+  
   obtenerDatosDelUsuario();
-  /* --------------- PUNTO 2: Escribe tu codigo a partir de aqui --------------- */
+
   let spanNombre = document.querySelector('#nombre');
   spanNombre.innerText = datosPersona.nombre;
   let spanEdad = document.querySelector('#edad');
@@ -65,7 +65,7 @@ function renderizarDatosUsuario() {
 
 
 function recorrerListadoYRenderizarTarjetas() {
-  /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
+  
   const fila = document.querySelector("#fila")
 
   if (document.querySelector('.caja')) return
@@ -83,12 +83,12 @@ function recorrerListadoYRenderizarTarjetas() {
 }
 
 function alternarColorTema() {
-  /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
+
 sitio.classList.toggle('dark');
   
 }
 
-/* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
+
 let visualizar = document.querySelector("#sobre-mi")
 document.addEventListener('keydown',(e) =>{
   let tecla = e.key;
